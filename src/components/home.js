@@ -1,12 +1,13 @@
 import React from "react";
 import Title from "./title";
-// import Wods from "./card";
+import Card from "./card";
 
 class Home extends React.Component {
   render() {
     return (
       <div className="container">
         <Title />
+        <Card />
       </div>
     );
   }

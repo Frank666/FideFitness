@@ -1,6 +1,5 @@
 import React from "react";
 import TopBar from "./components/menu/topBar";
-// import Home from "./components/home";
 
 class Main extends React.Component {
   render() {

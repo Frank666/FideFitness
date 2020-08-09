@@ -2,6 +2,7 @@ import React from "react";
 import { getWods } from "../models/wod";
 import { Row, Col } from "react-bootstrap";
 import Button from "./myButton";
+import "../css/general.css";
 
 class Card extends React.Component {
   constructor(props) {
@@ -21,14 +22,14 @@ class Card extends React.Component {
       return (
         <Row>
           <Col _id={wod.id} xs={2}>
-            Date: {wod.date}
+            <p className="bold">Date:</p> {wod.date}
           </Col>
           <Col xs={8}>
-            <p>Warm-Up: {wod.warmup}</p>
-            <p>Strength: {wod.strength}</p>
-            <p>WOD: {wod.wod}</p>
+            <p className="bold">Warm-Up:</p> <p>{wod.warmup}</p>
+            <p className="bold">Strength:</p> <p>{wod.strength}</p>
+            <p className="bold">WOD:</p> <p>{wod.wod}</p>
             <p>
-              <Button />
+              <Button className="buttonRight" />
             </p>
           </Col>
         </Row>
